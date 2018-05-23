@@ -17,7 +17,4 @@ This is where the designs and code of the website lives! It's currently a work i
 
 - Use [Contentful](https://www.contentful.com/) or [WordPress](https://wordpress.com/) as the backend.
 - Use [GatsbyJS](https://www.gatsbyjs.org/features/) for the frontend to take advantage of built-in PWA features.
-
-## Screen Reader Flow
-
-![This is a screenshot of what the screen reader will read](https://raw.githubusercontent.com/jagtalon/friendstalkfrontend/master/Designs/Screen%20Reader%20Flow.png)
+- This is what the screen reader [should read out](https://raw.githubusercontent.com/jagtalon/friendstalkfrontend/master/Designs/Screen%20Reader%20Flow.png).
