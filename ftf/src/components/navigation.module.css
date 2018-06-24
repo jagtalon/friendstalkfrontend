@@ -1,0 +1,63 @@
+:root {
+    --header-padding: 19px 28px 0;
+    --font-size: 0.706em;
+    --list-spacing: .5rem;
+}
+
+/* Header
+   ------------------------------------ */
+.header {
+    padding: var(--header-padding);
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    margin-left: 0;
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+/* The right side of the nav
+   ------------------------------------ */
+
+.right {
+    margin-left: auto;
+}
+
+.right li {
+    font-size: var(--font-size);
+    padding-right: var(--list-spacing);
+}
+
+.right li:last-of-type {
+    padding-right: 0;
+}
+
+/* Link styles
+   ------------------------------------ */
+
+.home {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover, .link:active {
+    text-decoration: underline;
+}
+
+@media (min-width: 720px) {
+    .header {
+        font-size: 120%;
+    }
+}

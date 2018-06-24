@@ -1,0 +1,144 @@
+:root {
+    --header-padding: 0 28px;
+    --section-padding: 2em 28px;
+    --border-radius: 4px;
+    --link-background: #E9E9E9;
+}
+
+header {
+    padding: var(--header-padding);
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.1em;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+section {
+    padding: var(--section-padding);
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+.player {
+    height: 164px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.player:before {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.18);
+    position: absolute;
+}
+
+.trailer {
+    font-size: 0.765em;
+    padding-top: .5em;
+}
+
+.play {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-top: 3.2em;
+    width: 50px;
+}
+
+.subscribe {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    background: var(--link-background);
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h2 {
+    padding-top: 1em;
+    margin-bottom: .3em;
+}
+
+.container h3 {
+    font-size: inherit;
+    font-weight: normal;
+    color: #737373;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 540px) {
+    .player {
+        height: 250px;
+    }
+
+    .play {
+        padding-top: 100px;
+    }
+}
+
+.mobiletrailer {
+    display: block;
+}
+
+.desktoptrailer {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .container {
+        flex-direction: row;
+        padding-bottom: 2em;
+    }
+
+    .container h2 {
+        padding-top: 0;
+    }
+
+    .description {
+        padding-left: 2em;
+    }
+
+    .player {
+        min-width: 384px;
+        width: 100%;
+    }
+
+    .mobiletrailer {
+        display: none;
+    }
+
+    .desktoptrailer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    section, header {
+        font-size: 115%;
+    }
+}
